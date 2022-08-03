@@ -1,0 +1,42 @@
+.wrapper {
+    flex-direction: column;
+    width: var(--sidebar-width);
+    margin: 0 5px;
+}
+
+.button-wrapper {
+    width: 100%;
+    color: var(--primary);
+}
+
+.button {
+    color: var(--primary);
+    width: 100%;
+    padding: 9px 16px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+    }
+    &:focus-within {
+        color: var(--white-color);
+        background-color: var(--primary);
+        border-radius: 5px;
+    }
+}
+
+.title,
+.icon {
+    padding: 5px;
+}
+
+.icon-wrapper {
+    display: flex;
+}
+
+.list-2 {
+    border-top: 1px ridge;
+}

@@ -1,0 +1,31 @@
+.education {
+    display: flex;
+}
+
+.college {
+    margin: 0 10px;
+}
+
+.img {
+    width: 340px;
+    height: 340px;
+    border-radius: 2px;
+    padding-top: 16px;
+    border-radius: 24px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.avatar-school {
+    text-align: center;
+    width: 340px;
+    height: 340px;
+}
+
+.year {
+    font-size: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+}

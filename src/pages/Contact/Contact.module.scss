@@ -1,0 +1,58 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+}
+
+.infor-contact {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.infor-items {
+    display: flex;
+    align-items: center;
+}
+
+.icon-contact {
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.form-1 {
+    display: flex;
+}
+
+.line-1 {
+    padding-right: 5px;
+}
+
+.contact-text {
+    font-size: 1.8rem;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+.contact-submit {
+    float: right;
+    height: 35px;
+    width: 70px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    cursor: pointer;
+
+    &:hover {
+        background-color: #ccc;
+    }
+}

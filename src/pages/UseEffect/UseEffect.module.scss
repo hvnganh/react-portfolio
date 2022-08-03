@@ -1,0 +1,53 @@
+.practice {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.example {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    margin-top: 20px;
+}
+
+.count {
+    margin: 10px 0;
+}
+
+.countinfinity {
+    margin: 10px 0;
+}
+
+.button {
+    cursor: pointer;
+    background-color: transparent;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    border-radius: 2px;
+    color: var(--primary);
+    user-select: none;
+    border: 1px solid var(--primary);
+    margin: 10px;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+    }
+
+    &:active {
+        background-color: #fff;
+    }
+}
+
+.input-text {
+    outline: solid 1px var(--primary);
+}
+
+@keyframes bigger {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}

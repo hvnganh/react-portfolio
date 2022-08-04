@@ -1,6 +1,6 @@
 const routes = {
-    home: 'https://hvnganh.github.io/react-portfolio/',
-    projects: 'https://hvnganh.github.io/react-portfolio/projects',
+    home: '/',
+    projects: '/projects',
     // introduce: '/introduce',
     // education: '/education',
     // experience: '/experience',

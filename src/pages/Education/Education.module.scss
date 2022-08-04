@@ -1,16 +1,22 @@
 .education {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: var(--width-header);
 }
 
 .college {
-    margin: 0 10px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .img {
-    width: 340px;
-    height: 340px;
+    width: 250px;
+    height: 250px;
     border-radius: 2px;
-    padding-top: 16px;
     border-radius: 24px;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
@@ -18,14 +24,16 @@
 
 .avatar-school {
     text-align: center;
-    width: 340px;
-    height: 340px;
+    width: 250px;
+    height: 250px;
 }
 
 .year {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: var(--white-color);
 }

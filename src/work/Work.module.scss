@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.components {
+    border-bottom: 2px solid rgba(59, 59, 59, 1);
+    padding: 20px 0;
+    width: var(--width-header);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

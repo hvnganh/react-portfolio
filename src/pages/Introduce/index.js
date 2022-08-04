@@ -15,9 +15,15 @@ function Introduce() {
                 <p className={cx('title')}>Web Developer</p>
                 <p className={cx('desc')}>
                     Detail-oriented, organized and meticulous employee. Works at fast pace to meet tight deadlines.
-                    Enthusiastic team player ready to contribute to company success. Driven Web Developer skilled in
-                    team collaboration to formulate and conceptualize corporate web presence. Embraces challenging
-                    projects requiring detailed coding changes, search engine-related considerations and security.
+                    Enthusiastic team player ready to contribute to company success.
+                </p>
+                <p className={cx('desc')}>
+                    Driven Web Developer skilled in team collaboration to formulate and conceptualize corporate web
+                    presence. Embraces challenging projects requiring detailed coding changes, search engine-related
+                    considerations and security.
+                </p>
+
+                <p className={cx('desc')}>
                     Integrates knowledge of visual arts to develop functional, appealing, custom-made web products and
                     services.
                 </p>

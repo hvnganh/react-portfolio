@@ -11,37 +11,37 @@ const cx = classNames.bind(styles);
 
 function Sidebar() {
     const navigate = useNavigate();
-    const handleNavigateHome = () => {
-        navigate(config.routes.home);
-    };
-    const handleNavigateEducation = () => {
-        navigate(config.routes.education);
-    };
+    // const handleNavigateHome = () => {
+    //     navigate(config.routes.home);
+    // };
+    // const handleNavigateEducation = () => {
+    //     navigate(config.routes.education);
+    // };
 
-    const handleNavigateIntroduce = () => {
-        navigate(config.routes.introduce);
-    };
-    const handleNavigateExperience = () => {
-        navigate(config.routes.experience);
-    };
+    // const handleNavigateIntroduce = () => {
+    //     navigate(config.routes.introduce);
+    // };
+    // const handleNavigateExperience = () => {
+    //     navigate(config.routes.experience);
+    // };
 
-    const handleNavigateSkill = () => {
-        navigate(config.routes.skill);
-    };
-    const handleNavigateContact = () => {
-        navigate(config.routes.contact);
-    };
+    // const handleNavigateSkill = () => {
+    //     navigate(config.routes.skill);
+    // };
+    // const handleNavigateContact = () => {
+    //     navigate(config.routes.contact);
+    // };
 
-    const handleNavigateUseState = () => {
-        navigate(config.routes.usestate);
-    };
-    const handleNavigateUseEffect = () => {
-        navigate(config.routes.useeffect);
-    };
+    // const handleNavigateUseState = () => {
+    //     navigate(config.routes.usestate);
+    // };
+    // const handleNavigateUseEffect = () => {
+    //     navigate(config.routes.useeffect);
+    // };
 
     return (
         <div className={cx('wrapper')}>
-            <div className={cx('list-1')}>
+            {/* <div className={cx('list-1')}>
                 <div className={cx('button-wrapper')}>
                     <Button className={cx('button', 'active')} onClick={handleNavigateHome}>
                         <div className={cx('icon-wrapper')}>
@@ -108,7 +108,7 @@ function Sidebar() {
                         </div>
                     </Button>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

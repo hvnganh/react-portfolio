@@ -31,11 +31,13 @@ function Experience() {
                         <p className={cx('title')}>02/2020 - 03/2021</p>
                         <p className={cx('desc')}>
                             Provide customer service experience to all members, non-members and users of the facility.
-                            Greeting members and users of the gym as they come through reception. Welcoming members and
-                            visitors to the gym and providing accurate information concerning programmes and activities.
-                            Recording and keeping clear and accurate records of all queries, complaints, lost property
-                            and repairs and ensuring the information is delegated to, and resolved by, the relevant
-                            department
+                            Greeting members and users of the gym as they come through reception. department
+                        </p>
+                        <p className={cx('desc')}>
+                            Welcoming members and visitors to the gym and providing accurate information concerning
+                            programmes and activities. Recording and keeping clear and accurate records of all queries,
+                            complaints, lost property and repairs and ensuring the information is delegated to, and
+                            resolved by, the relevant
                         </p>
                     </div>
 

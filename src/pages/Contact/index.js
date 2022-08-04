@@ -20,10 +20,12 @@ function Contact() {
                     </div>
                     <div className={cx('infor-items')}>
                         <FontAwesomeIcon className={cx('icon-contact')} icon={faMailBulk} />
-                        <p className={cx('contact-text')}>nguyenhunganhhcm@gmail.com</p>
+                        <p className={cx('contact-text')} style={{ textTransform: 'lowercase' }}>
+                            nguyenhunganhhcm@gmail.com
+                        </p>
                     </div>
                 </div>
-                <div className={cx('contact-form')}>
+                {/* <div className={cx('contact-form')}>
                     <form action="">
                         <div className={cx('form-1')}>
                             <div className={cx('line-1')}>
@@ -46,7 +48,7 @@ function Contact() {
                         </div>
                         <input type="submit" className={cx('contact-submit')} value="SEND" />
                     </form>
-                </div>
+                </div> */}
             </div>
         </div>
     );

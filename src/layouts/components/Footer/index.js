@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
 import { faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
@@ -9,11 +10,11 @@ function Footer() {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('social-list')}>
-                <div className={cx('link-items')}>
+                {/* <div className={cx('link-items')}>
                     <a href="https://www.facebook.com/nguyenhunganhh/" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon className={cx('icon-link')} icon={faFacebook} />
                     </a>
-                </div>
+                </div> */}
                 <div className={cx('link-items')}>
                     <a
                         href="https://www.linkedin.com/in/anh-nguy%E1%BB%85n-6982341b5/"
@@ -30,7 +31,10 @@ function Footer() {
                 </div>
             </div>
             <div className={cx('copyright')}>
-                <p className={cx('text')}>Designed by Hvnganh</p>
+                <p className={cx('text')}>
+                    Designed by <span style={{ textDecoration: 'underline' }}>Hvnganh</span> with{' '}
+                    <FontAwesomeIcon className={cx('text-icon')} icon={faHeart} />
+                </p>
             </div>
         </div>
     );

@@ -1,13 +1,10 @@
 .wrapper {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #001733;
-    z-index: 10;
+    background-color: rgba(40, 44, 52, 1);
 }
 
 .social-list {
@@ -20,8 +17,8 @@
 
 .icon-link {
     list-style: none;
-    font-size: 2rem;
-    color: var(--white-color);
+    font-size: 3rem;
+    color: var(--primary);
     margin: 14px;
     padding: 6px;
     user-select: none;
@@ -30,4 +27,12 @@
 
 .copyright {
     margin-bottom: 10px;
+}
+
+.text {
+    color: var(--white-color);
+}
+
+.text-icon {
+    color: var(--primary);
 }

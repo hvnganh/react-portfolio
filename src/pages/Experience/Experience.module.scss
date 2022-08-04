@@ -4,11 +4,12 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin: 20px 0;
 }
 
 .img {
-    width: 440px;
-    height: 340px;
+    width: 340px;
+    height: 240px;
     border-radius: 25px;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
@@ -38,8 +39,9 @@
 .desc {
     padding-top: 14px;
     flex: 1;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 20px;
     font-weight: 300;
     text-align: justify;
+    color: var(--white-color);
 }

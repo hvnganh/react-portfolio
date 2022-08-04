@@ -5,14 +5,13 @@
     justify-content: center;
 }
 
-.contact-content {
-    display: flex;
-    align-items: center;
-}
-
 .infor-contact {
-    display: inline-block;
-    margin-right: 50px;
+    // display: inline-block
+    // margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .infor-items {
@@ -35,6 +34,7 @@
 
 .contact-text {
     font-size: 1.8rem;
+    color: var(--white-color);
 }
 
 .contact-form .form-control {

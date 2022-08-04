@@ -12,29 +12,29 @@ function Education() {
             <div className={cx('college')}>
                 <div className={cx('avatar-school')}>
                     <img className={cx('img')} src={college} alt="Hùng Anh" />
-                    <p className={cx('year')} style={{ color: '#e22136' }}>
-                        2017-2020
-                    </p>
-                    <p className={cx('title')}>Associate of arts</p>
                 </div>
+                <p className={cx('year')} style={{ color: '#e22136' }}>
+                    2017-2020
+                </p>
+                <p className={cx('title')}>Associate of arts</p>
             </div>
             <div className={cx('college')}>
                 <div className={cx('avatar-school')}>
                     <img className={cx('img')} src={uni} alt="Hùng Anh" />
-                    <p className={cx('year')} style={{ color: '#0134c1' }}>
-                        2020-2022
-                    </p>
-                    <p className={cx('title')}>Bachelor’s Degree in English</p>
                 </div>
+                <p className={cx('year')} style={{ color: '#0134c1' }}>
+                    2020-2022
+                </p>
+                <p className={cx('title')}>Bachelor’s Degree in English</p>
             </div>
             <div className={cx('college')}>
                 <div className={cx('avatar-school')}>
                     <img className={cx('img')} src={center} alt="Hùng Anh" />
-                    <p className={cx('year')} style={{ color: '#f57423' }}>
-                        2021-2022
-                    </p>
-                    <p className={cx('title')}>Python django & ReactJS</p>
                 </div>
+                <p className={cx('year')} style={{ color: '#f57423' }}>
+                    2021-2022
+                </p>
+                <p className={cx('title')}>Python django & ReactJS</p>
             </div>
         </div>
     );

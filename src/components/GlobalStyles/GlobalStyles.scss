@@ -10,15 +10,18 @@
     --black-color: #000;
     --white-color: #fff;
     --text-color: #ccc;
-    --primary: #6667ab;
-    --content-color: rgba(243, 245, 118, 0.1);
+    --primary: rgb(104 104 172);
+    --content-color: #282c34;
 
     --sidebar-width: 300px;
+    --header-height: 60px;
+    --width-header: 1264px;
 }
 
 html {
     font-size: 62.5%;
     height: 100%;
+    font-family: 'Inconsolata', monospace;
 }
 
 body {

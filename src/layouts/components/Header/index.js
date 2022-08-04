@@ -8,11 +8,11 @@ function Header() {
     const navigate = useNavigate();
 
     const handleHome = () => {
-        navigate('/');
+        navigate('https://hvnganh.github.io/react-portfolio/');
     };
 
     const handleProjects = () => {
-        navigate('/projects');
+        navigate('https://hvnganh.github.io/react-portfolio/projects');
     };
 
     return (

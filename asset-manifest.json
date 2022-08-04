@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.f7b8bf20.css",
+    "main.js": "/react-portfolio/static/js/main.c954886e.js",
+    "static/media/React.svg.png": "/react-portfolio/static/media/React.svg.81ed438b18e24116794d.png",
+    "static/media/avt.jpg": "/react-portfolio/static/media/avt.897270f9242915a578d8.jpg",
+    "static/media/college.jpg": "/react-portfolio/static/media/college.af7d71c7c6e83adcd4e0.jpg",
+    "static/media/uni.jpg": "/react-portfolio/static/media/uni.cdec4caf5cc3b20f9d60.jpg",
+    "static/media/bodybyjovie.jpg": "/react-portfolio/static/media/bodybyjovie.db6533f33da9282ad10a.jpg",
+    "static/media/center.jpg": "/react-portfolio/static/media/center.5caedaed960c2ebc04b0.jpg",
+    "static/media/trans.jpg": "/react-portfolio/static/media/trans.46415923276bcf5b0ad7.jpg",
+    "static/media/python.jpg": "/react-portfolio/static/media/python.3e8a90f52b67ce17a3f4.jpg",
+    "static/media/newyork.jpg": "/react-portfolio/static/media/newyork.0b5141fe602640ae5dda.jpg",
+    "static/media/django.jpg": "/react-portfolio/static/media/django.4c399895f677cd3bfbc8.jpg",
+    "static/media/react.jpg": "/react-portfolio/static/media/react.cd4ab68456d5875b788e.jpg",
+    "static/media/js.jpg": "/react-portfolio/static/media/js.63ae51f382ab18a439a4.jpg",
+    "static/media/css.jpg": "/react-portfolio/static/media/css.ef605f2148ca970497b5.jpg",
+    "index.html": "/react-portfolio/index.html",
+    "main.f7b8bf20.css.map": "/react-portfolio/static/css/main.f7b8bf20.css.map",
+    "main.c954886e.js.map": "/react-portfolio/static/js/main.c954886e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7b8bf20.css",
+    "static/js/main.c954886e.js"
+  ]
+}

@@ -23,6 +23,9 @@
     padding: 6px;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+    &:hover {
+        color: var(--white-color);
+    }
 }
 
 .copyright {

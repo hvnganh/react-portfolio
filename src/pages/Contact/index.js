@@ -10,7 +10,7 @@ function Contact() {
         <div className={cx('wrapper')}>
             <div className={cx('contact-content')}>
                 <div className={cx('infor-contact')}>
-                    <div className={cx('infor-items')}>
+                    <div className={cx('infor-items', 'address')}>
                         <FontAwesomeIcon className={cx('icon-contact')} icon={faLocationArrow} />
                         <p className={cx('contact-text')}>130 Le Van Luong, Tan Hung Ward, District 7, HCMC</p>
                     </div>

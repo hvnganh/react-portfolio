@@ -52,58 +52,60 @@ function Weather() {
 
     return (
         <div className={cx('container')}>
-            <div className={cx('main-section')}>
-                <div className={cx('search-bar')}>
-                    <FontAwesomeIcon className={cx('search-icon')} icon={faSearch} />
-                    <input
-                        className={cx('search-input')}
-                        type="text"
-                        value={searchInput}
-                        onChange={handleSearchInput}
-                        name="search-city"
-                        placeholder="Tìm kiếm thành phố...."
-                    />
-                </div>
-                <div className={cx('info-wrapper')}>
-                    <p className={cx('city-name')}>{cityName ? cityName : DEFAULT_VALUE}</p>
-                    <p className={cx('weather-state')}>{weatherState ? weatherState : DEFAULT_VALUE}</p>
-                    <img
-                        src={`http://openweathermap.org/img/wn/${weatherIcon ? weatherIcon : '10d@2x'}.png`}
-                        className={cx('weather-icon')}
-                        alt="--"
-                    />
-                    <p className={cx('temperature')}>{temperature ? Math.round(temperature) : DEFAULT_VALUE}</p>
-                </div>
-            </div>
-            <div className={cx('additional-section')}>
-                <div className={cx('row')}>
-                    <div className={cx('item')}>
-                        <div className={cx('label')}>MT Mộc</div>
-                        <div className={cx('value sunrise')}>
-                            {sunrise ? moment.unix(sunrise).format('H:mm') : DEFAULT_VALUE}
-                        </div>
+            <div className={cx('wrapper-weather')}>
+                <div className={cx('main-section')}>
+                    <div className={cx('search-bar')}>
+                        <FontAwesomeIcon className={cx('search-icon')} icon={faSearch} />
+                        <input
+                            className={cx('search-input')}
+                            type="text"
+                            value={searchInput}
+                            onChange={handleSearchInput}
+                            name="search-city"
+                            placeholder="Tìm kiếm thành phố...."
+                        />
                     </div>
-                    <div className={cx('item')}>
-                        <div className={cx('label')}>MT Lặn</div>
-                        <div className={cx('value sunset')}>
-                            {sunset ? moment.unix(sunset).format('H:mm') : DEFAULT_VALUE}
-                        </div>
+                    <div className={cx('info-wrapper')}>
+                        <p className={cx('city-name')}>{cityName ? cityName : DEFAULT_VALUE}</p>
+                        <p className={cx('weather-state')}>{weatherState ? weatherState : DEFAULT_VALUE}</p>
+                        <img
+                            src={`http://openweathermap.org/img/wn/${weatherIcon ? weatherIcon : '10d@2x'}.png`}
+                            className={cx('weather-icon')}
+                            alt="--"
+                        />
+                        <p className={cx('temperature')}>{temperature ? Math.round(temperature) : DEFAULT_VALUE}</p>
                     </div>
                 </div>
-                <div className={cx('row')}>
-                    <div className={cx('item')}>
-                        <div className={cx('label')}>Độ Ẩm</div>
-                        <div className={cx('value')}>
-                            <span className={cx('humidity')}>{humidity ? humidity : DEFAULT_VALUE}</span>%
+                <div className={cx('additional-section')}>
+                    <div className={cx('row')}>
+                        <div className={cx('item')}>
+                            <div className={cx('label')}>MT Mộc</div>
+                            <div className={cx('value sunrise')}>
+                                {sunrise ? moment.unix(sunrise).format('H:mm') : DEFAULT_VALUE}
+                            </div>
+                        </div>
+                        <div className={cx('item')}>
+                            <div className={cx('label')}>MT Lặn</div>
+                            <div className={cx('value sunset')}>
+                                {sunset ? moment.unix(sunset).format('H:mm') : DEFAULT_VALUE}
+                            </div>
                         </div>
                     </div>
-                    <div className={cx('item')}>
-                        <div className={cx('label')}>Gió</div>
-                        <div className={cx('value')}>
-                            <span className={cx('wind-speed')}>
-                                {windSpeed ? Number(windSpeed * 3.6).toFixed(2) : DEFAULT_VALUE}
-                            </span>
-                            km/h
+                    <div className={cx('row')}>
+                        <div className={cx('item')}>
+                            <div className={cx('label')}>Độ Ẩm</div>
+                            <div className={cx('value')}>
+                                <span className={cx('humidity')}>{humidity ? humidity : DEFAULT_VALUE}</span>%
+                            </div>
+                        </div>
+                        <div className={cx('item')}>
+                            <div className={cx('label')}>Gió</div>
+                            <div className={cx('value')}>
+                                <span className={cx('wind-speed')}>
+                                    {windSpeed ? Number(windSpeed * 3.6).toFixed(2) : DEFAULT_VALUE}
+                                </span>
+                                km/h
+                            </div>
                         </div>
                     </div>
                 </div>

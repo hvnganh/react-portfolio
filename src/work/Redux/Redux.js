@@ -16,7 +16,7 @@ function Redux() {
                 backgroundColor: 'white',
                 padding: 20,
                 borderRadius: 5,
-                height: '60vh',
+                height: '90vh',
             }}
         >
             <Title style={{ textAlign: 'center' }}>TODO APP with REDUX</Title>

@@ -37,3 +37,21 @@
     font-size: 1.5rem;
     color: var(--white-color);
 }
+
+@media (max-width: 46.1875em) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .education {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .college {
+        margin-bottom: 15px;
+    }
+}

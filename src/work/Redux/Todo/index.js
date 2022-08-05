@@ -1,4 +1,4 @@
-import { Row, Tag, Checkbox } from 'antd';
+import { Row, Tag, Checkbox, Button } from 'antd';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import todosSlice from '../TodoList/todosSlice';
@@ -29,9 +29,14 @@ export default function Todo({ name, priority, completed, id }) {
             <Checkbox checked={checked} onChange={toggleCheckbox}>
                 {name}
             </Checkbox>
-            <Tag color={priorityColorMapping[priority]} style={{ margin: 0 }}>
-                {priority}
-            </Tag>
+            <div>
+                <Tag color={priorityColorMapping[priority]} style={{ marginRight: '5px' }}>
+                    {priority}
+                </Tag>
+                <Button onClick={() => dispatch(todosSlice.actions.deleteTodos(id))} size="small" danger>
+                    X
+                </Button>
+            </div>
         </Row>
     );
 }

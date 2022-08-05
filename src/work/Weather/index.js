@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 import { useDebounce } from '~/hooks';
 import moment from 'moment';
+import axios from 'axios';
 
 const cx = classNames.bind(styles);
 
@@ -26,20 +27,19 @@ function Weather() {
 
     useEffect(() => {
         const fetchApi = async () => {
-            const response = await fetch(
+            const response = await axios.get(
                 `https://api.openweathermap.org/data/2.5/weather?q=${
                     debouncedValue ? debouncedValue : 'ho chi minh'
                 }&appid=${APP_ID}&units=metric&lang=vi` ?? {},
             );
-            const data = await response.json();
-            setCityName(data.name);
-            setWeatherState(data.weather[0].description);
-            setWeatherIcon(data.weather[0].icon);
-            setTemperature(data.main.temp);
-            setSunrise(data.sys.sunrise);
-            setSunset(data.sys.sunset);
-            setHumidity(data.main.humidity);
-            setWindSpeed(data.wind.speed);
+            setCityName(response.data.name);
+            setWeatherState(response.data.weather[0].description);
+            setWeatherIcon(response.data.weather[0].icon);
+            setTemperature(response.data.main.temp);
+            setSunrise(response.data.sys.sunrise);
+            setSunset(response.data.sys.sunset);
+            setHumidity(response.data.main.humidity);
+            setWindSpeed(response.data.wind.speed);
         };
         fetchApi();
 

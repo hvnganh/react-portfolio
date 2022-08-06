@@ -19,7 +19,7 @@ function Redux() {
                 height: '90vh',
             }}
         >
-            <Title style={{ textAlign: 'center' }}>TODO APP with REDUX</Title>
+            <Title style={{ textAlign: 'center' }}>DAILY TASKS</Title>
             <Filters />
             <Divider />
             <TodoList />

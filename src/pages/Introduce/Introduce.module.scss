@@ -58,6 +58,10 @@
         flex-direction: column;
     }
     .information {
-        max-width: 350px;
+        width: 100%;
+    }
+
+    .desc {
+        padding: 10px;
     }
 }

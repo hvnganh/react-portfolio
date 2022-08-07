@@ -28,6 +28,10 @@
     }
 }
 
+.icon-link.dark {
+    color: var(--react-color);
+}
+
 .copyright {
     margin-bottom: 10px;
 }
@@ -38,4 +42,8 @@
 
 .text-icon {
     color: var(--primary);
+}
+
+.text-icon.dark {
+    color: var(--react-color);
 }

@@ -2,24 +2,27 @@ import classNames from 'classnames/bind';
 import styles from './Contact.module.scss';
 import { faLocationArrow, faPhone, faMailBulk } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useContext } from 'react';
+import { ThemeContext } from '~/layouts/components/Header/ThemeContext/ThemeContext';
 
 const cx = classNames.bind(styles);
 
 function Contact() {
+    const value = useContext(ThemeContext);
     return (
         <div className={cx('wrapper')}>
             <div className={cx('contact-content')}>
                 <div className={cx('infor-contact')}>
                     <div className={cx('infor-items', 'address')}>
-                        <FontAwesomeIcon className={cx('icon-contact')} icon={faLocationArrow} />
+                        <FontAwesomeIcon className={cx('icon-contact', value.theme)} icon={faLocationArrow} />
                         <p className={cx('contact-text')}>130 Le Van Luong, Tan Hung Ward, District 7, HCMC</p>
                     </div>
                     <div className={cx('infor-items')}>
-                        <FontAwesomeIcon className={cx('icon-contact')} icon={faPhone} />
+                        <FontAwesomeIcon className={cx('icon-contact', value.theme)} icon={faPhone} />
                         <p className={cx('contact-text')}>079.477.0468</p>
                     </div>
                     <div className={cx('infor-items')}>
-                        <FontAwesomeIcon className={cx('icon-contact')} icon={faMailBulk} />
+                        <FontAwesomeIcon className={cx('icon-contact', value.theme)} icon={faMailBulk} />
                         <p className={cx('contact-text')} style={{ textTransform: 'lowercase' }}>
                             nguyenhunganhhcm@gmail.com
                         </p>

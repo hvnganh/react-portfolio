@@ -3,10 +3,13 @@ import styles from './Footer.module.scss';
 import { faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { useContext } from 'react';
+import { ThemeContext } from '../Header/ThemeContext/ThemeContext';
 
 const cx = classNames.bind(styles);
 
 function Footer() {
+    const value = useContext(ThemeContext);
     return (
         <div className={cx('wrapper')}>
             <div className={cx('social-list')}>
@@ -21,19 +24,19 @@ function Footer() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <FontAwesomeIcon className={cx('icon-link')} icon={faLinkedin} />
+                        <FontAwesomeIcon className={cx('icon-link', value.theme)} icon={faLinkedin} />
                     </a>
                 </div>
                 <div className={cx('link-items')}>
                     <a href="https://github.com/hvnganh" target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon className={cx('icon-link')} icon={faGithub} />
+                        <FontAwesomeIcon className={cx('icon-link', value.theme)} icon={faGithub} />
                     </a>
                 </div>
             </div>
             <div className={cx('copyright')}>
                 <p className={cx('text')}>
                     Designed by <span style={{ textDecoration: 'underline' }}>Hvnganh</span> with{' '}
-                    <FontAwesomeIcon className={cx('text-icon')} icon={faHeart} />
+                    <FontAwesomeIcon className={cx('text-icon', value.theme)} icon={faHeart} />
                 </p>
             </div>
         </div>

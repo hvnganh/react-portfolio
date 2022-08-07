@@ -40,6 +40,14 @@
     font-weight: 600;
 }
 
+.name.dark {
+    color: var(--react-color);
+}
+
+.title.dark {
+    color: var(--react-color);
+}
+
 .desc {
     padding-top: 14px;
     flex: 1;

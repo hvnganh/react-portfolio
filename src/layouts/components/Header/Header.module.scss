@@ -29,6 +29,31 @@
     }
 }
 
+.link-btn.dark {
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #20232a;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+        color: var(--react-color);
+    }
+}
+
+.icon {
+    font-size: 2rem;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.icon.dark {
+    color: var(--react-color);
+}
+
 @keyframes run {
     0% {
         transform: translateX(0);

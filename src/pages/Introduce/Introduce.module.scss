@@ -27,12 +27,20 @@
     font-weight: 700;
 }
 
+.name.dark {
+    color: var(--react-color);
+}
+
 .title {
     padding-top: 14px;
     flex: 1;
     font-size: 2.5rem;
     line-height: 2.5rem;
     font-weight: 700;
+}
+
+.title.dark {
+    color: var(--react-color);
 }
 
 .desc {

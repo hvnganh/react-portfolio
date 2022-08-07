@@ -1,6 +1,7 @@
 const routes = {
     home: '/',
     projects: '/projects',
+    eshop: '/eshop',
     // introduce: '/introduce',
     // education: '/education',
     // experience: '/experience',

@@ -1,0 +1,121 @@
+.wrapper {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.col {
+    width: 50%;
+}
+
+.checkout-wrapper {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.checkout-text {
+    color: #1a94ff;
+    font-weight: 700;
+    margin: 0 15px;
+    font-size: 4rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.icon {
+    color: #1a94ff;
+    font-size: 2rem;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a94ff;
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: var(--white-color);
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.cart {
+    display: flex;
+    width: 100%;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+}
+
+.name {
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.total-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.total {
+    color: #1a94ff;
+    font-weight: 700;
+}
+
+.total-money {
+    color: var(--black-color);
+    font-weight: 400;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #1a94ff;
+    border: 1px solid #1a94ff;
+    width: 80px;
+    height: 40px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    margin: 10px 10px 10px 30px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    &:hover {
+        cursor: pointer;
+        background-color: #1a94ff;
+        color: var(--white-color);
+    }
+}

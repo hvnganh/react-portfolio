@@ -15,6 +15,10 @@ function Header() {
         navigate('/projects');
     };
 
+    const handleEShop = () => {
+        navigate('/eshop');
+    };
+
     return (
         <div className={cx('wrapper')}>
             <div className={cx('link-items')}>
@@ -23,6 +27,9 @@ function Header() {
                 </button>
                 <button onClick={handleProjects} className={cx('link-btn')}>
                     Projects
+                </button>
+                <button onClick={handleEShop} className={cx('link-btn')}>
+                    E-Shop
                 </button>
             </div>
         </div>

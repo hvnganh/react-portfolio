@@ -8,10 +8,12 @@ import Home from '~/pages/Home';
 // import UseEffect from '~/pages/UseEffect';
 import config from '~/config';
 import Work from '~/work';
+import EShop from '~/EShop';
 
 const publicRoutes = [
     { path: config.routes.home, component: Home },
     { path: config.routes.projects, component: Work },
+    { path: config.routes.eshop, component: EShop },
     // { path: config.routes.introduce, component: Introduce },
     // { path: config.routes.contact, component: Contact },
     // { path: config.routes.education, component: Education },

@@ -45,12 +45,27 @@
 
 .icon {
     font-size: 2rem;
+    outline-style: none;
+
     &:hover {
         cursor: pointer;
     }
 }
 
 .icon.dark {
+    color: var(--react-color);
+}
+
+.tippy {
+    font-weight: 700;
+    background-color: #282c34;
+    border-radius: 10px;
+    width: calc(100% + 10px);
+    text-align: center;
+    box-shadow: 0 0 1px var(--black-color);
+}
+
+.tippy.dark {
     color: var(--react-color);
 }
 

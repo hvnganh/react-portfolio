@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext/ThemeContext';
+import Tippy from '@tippyjs/react';
 
 const cx = classNames.bind(styles);
 
@@ -36,7 +37,9 @@ function Header() {
                 <button onClick={handleEShop} className={cx('link-btn', value.theme)}>
                     E-Shop
                 </button>
-                <FontAwesomeIcon onClick={value.toggleTheme} className={cx('icon', value.theme)} icon={faReact} />
+                <Tippy className={cx('tippy', value.theme)} placement="right-end" content="Change Color">
+                    <FontAwesomeIcon onClick={value.toggleTheme} className={cx('icon', value.theme)} icon={faReact} />
+                </Tippy>
             </div>
         </div>
     );

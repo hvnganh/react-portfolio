@@ -15,6 +15,7 @@ function ProductCart(props) {
     const handleAddItem = () => {
         setIsAdded(true);
         const newItems = {
+            id: id,
             name: name,
             price: price,
             imageURL: imageUrl,
@@ -22,6 +23,9 @@ function ProductCart(props) {
         setAddToCart((item) => [...item, newItems]);
         setTotal((total) => (total += Number(price)));
         setNumberItems(addToCart);
+        setTimeout(() => {
+            setIsAdded(false);
+        }, 2000);
     };
 
     return (

@@ -25,3 +25,5 @@ export const todosRemainingSelector = createSelector(
         });
     },
 );
+
+export const productListSelector = (state) => state.productList;

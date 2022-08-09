@@ -120,6 +120,81 @@
     }
 }
 
+.button-disabled {
+    cursor: default;
+    color: rgba($color: #1a94ff, $alpha: 0.5);
+    border-radius: 10px;
+    margin: 10px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+    background-color: rgba($color: #ccc, $alpha: 0.3);
+    &:hover {
+        cursor: default;
+        background-color: rgba($color: #ccc, $alpha: 0.3);
+        color: rgba($color: #1a94ff, $alpha: 0.5);
+    }
+}
+
+.modal-wrapper {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    animation: fadeOut 4s ease-in-out 1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-text {
+    color: #1a94ff;
+    font-weight: 700;
+    margin: 0 15px;
+    font-size: 4rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.img-modal {
+    width: 500px;
+    height: 300px;
+}
+
+.cart-empty-wrapper {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+}
+
+.img-bag {
+    width: 400px;
+    height: 400px;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @media (max-width: 46.1875em) {
     html,
     body {
@@ -146,5 +221,10 @@
 
     .button {
         margin: 10px 0;
+    }
+
+    .img-bag {
+        width: 250px;
+        height: 250px;
     }
 }

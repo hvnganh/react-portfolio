@@ -1,10 +1,7 @@
 import classNames from 'classnames/bind';
-import styles from './EShop.module.scss';
-import Checkout from './ShopComponents/Checkout';
-import ShopTitle from './ShopComponents/ShopTitle';
-import ShopItems from './ShopComponents/ShopItems';
-import { context } from './ShopComponents/Context';
-import { useState } from 'react';
+import styles from './CartDetail.module.scss';
+import { useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -15,6 +12,7 @@ const products = [
         name_detail: 'Macbook Air M2 10GPU 16GB 256GB - Midnight',
         price: '2000',
         description: 'M2 8CPU 10GPU 16GB 256GB 13.6 inch (2560x1664) IPS, Led Backlit, True Tone Touch ID ',
+
         imageUrl:
             'https://product.hstatic.net/1000026716/product/r_m2_13_6_inch_2022_midnight_0_98db5d74968b46a89ef9094eccaec48e_master_b58ca6a737da4d36b34176e74d46280f.png',
     },
@@ -113,26 +111,42 @@ const products = [
     },
 ];
 
-function EShop() {
-    const [total, setTotal] = useState(0);
-    const [numberItems, setNumberItems] = useState([]);
-    const [addToCart, setAddToCart] = useState([{}]);
+function CartDetail() {
+    const data = useParams();
+
+    const navigate = useNavigate();
+
+    const handleBackEShop = () => {
+        navigate('/eshop');
+    };
 
     return (
-        <context.Provider value={{ total, setTotal, numberItems, setNumberItems, addToCart, setAddToCart }}>
-            <div className={cx('wrapper')}>
-                <div className={cx('components')}>
-                    <ShopTitle />
+        <div className={cx('wrapper')}>
+            <div className={cx('item')}>
+                <div className={cx('text-wrapper')}>
+                    <h1 className={cx('text')}>Item Detail</h1>
                 </div>
-                <div className={cx('components')}>
-                    <ShopItems data={products} />
-                </div>
-                <div className={cx('components')}>
-                    <Checkout />
-                </div>
+                {products
+                    .filter((product) => product.id === Number(data.id))
+                    .map((item) => (
+                        <div key={item.id} className={cx('detail-wrapper')}>
+                            <div key={item.id} className={cx('image-wrapper')}>
+                                <img className={cx('image')} src={item.imageUrl} alt="Item" />
+                            </div>
+                            <div className={cx('info')}>
+                                <h1 className={cx('name')}>Name: {item.name}</h1>
+                                <p className={cx('desc')}>Description: {item.description}</p>
+                                <div className={cx('btn-wrapper')}>
+                                    <button onClick={handleBackEShop} className={cx('btn')}>
+                                        Go back to order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
             </div>
-        </context.Provider>
+        </div>
     );
 }
 
-export default EShop;
+export default CartDetail;

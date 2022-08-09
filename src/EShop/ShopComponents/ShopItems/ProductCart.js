@@ -25,7 +25,7 @@ function ProductCart(props) {
         setNumberItems(addToCart);
         setTimeout(() => {
             setIsAdded(false);
-        }, 2000);
+        }, 10000);
     };
 
     return (

@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './CartDetail.module.scss';
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import { Slide } from 'react-slideshow-image';
 
 const cx = classNames.bind(styles);
 

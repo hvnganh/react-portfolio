@@ -34,7 +34,7 @@ export default createSlice({
             id: 4,
             name: 'Macbook Air M2 16GB',
             breed: 'Macbook Air M2 16GB',
-            price: '2000',
+            price: '2200',
             description: 'M2 8CPU 10GPU 16GB 256GB 13.6 inch (2560x1664) IPS, Led Backlit, True Tone Touch ID ',
             imageUrl:
                 'https://product.hstatic.net/1000026716/product/r_m2_13_6_inch_2022_midnight_0_98db5d74968b46a89ef9094eccaec48e_master_b58ca6a737da4d36b34176e74d46280f.png',

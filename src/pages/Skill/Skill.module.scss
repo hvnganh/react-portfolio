@@ -3,8 +3,19 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    animation: toTop 1s ease-in-out 1;
 }
 
+@keyframes toTop {
+    from {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .img {
     max-width: 150px;
     max-height: 150px;

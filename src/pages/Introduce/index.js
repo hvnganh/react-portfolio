@@ -1,16 +1,32 @@
 import classNames from 'classnames/bind';
 import styles from './Introduce.module.scss';
 import avt from '../../assets/images/avt.jpg';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '~/layouts/components/Header/ThemeContext/ThemeContext';
 
 const cx = classNames.bind(styles);
 
 function Introduce() {
     const { theme } = useContext(ThemeContext);
+    const [animation, setAnimation] = useState(false);
+
+    useEffect(() => {
+        setAnimation(true);
+        const handleScroll = () => {
+            if (window.scrollY <= 400) {
+                setAnimation(true);
+            } else {
+                setAnimation(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
-        <div className={cx('container')}>
+        <div className={cx(animation ? 'container' : 'hide')}>
             <div className={cx('avatar')}>
                 <img className={cx('img')} src={avt} alt="Hùng Anh" />{' '}
             </div>

@@ -3,8 +3,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: toTop 1s ease-in-out 1;
 }
 
+@keyframes toTop {
+    from {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .infor-contact {
     // display: inline-block
     // margin-right: 50px;

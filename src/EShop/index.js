@@ -4,7 +4,7 @@ import Checkout from './ShopComponents/Checkout';
 import ShopTitle from './ShopComponents/ShopTitle';
 import ShopItems from './ShopComponents/ShopItems';
 import { context } from './ShopComponents/Context';
-import { useState } from 'react';
+import { useState, memo } from 'react';
 
 const cx = classNames.bind(styles);
 
@@ -12,6 +12,8 @@ function EShop() {
     const [total, setTotal] = useState(0);
     const [numberItems, setNumberItems] = useState([]);
     const [addToCart, setAddToCart] = useState([{}]);
+
+    console.log('re render ESHOP');
 
     return (
         <context.Provider value={{ total, setTotal, numberItems, setNumberItems, addToCart, setAddToCart }}>
@@ -30,4 +32,4 @@ function EShop() {
     );
 }
 
-export default EShop;
+export default memo(EShop);

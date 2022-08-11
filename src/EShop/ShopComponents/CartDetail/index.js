@@ -17,6 +17,7 @@ function CartDetail() {
     const handleBackEShop = () => {
         navigate('/eshop');
     };
+    console.log('re render CartDetail');
 
     return (
         <div className={cx('wrapper')}>

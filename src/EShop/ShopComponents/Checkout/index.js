@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './Checkout.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-import { useContext, useState } from 'react';
+import { useContext, useState, useCallback, memo } from 'react';
 import { context } from '../Context';
 
 const cx = classNames.bind(styles);
@@ -11,7 +11,7 @@ function Checkout() {
     const { numberItems, addToCart, total, setAddToCart, setTotal, setNumberItems } = useContext(context);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const handleSubmit = () => {
+    const handleSubmit = useCallback(() => {
         setAddToCart([{}]);
         setTotal(0);
         setNumberItems([]);
@@ -19,7 +19,10 @@ function Checkout() {
         setTimeout(() => {
             setIsModalOpen(false);
         }, 4000);
-    };
+    }, [setAddToCart, setNumberItems, setTotal]);
+
+    console.log('re render Checkout');
+
     return (
         <div className={cx('wrapper')}>
             <div className={cx('row')}>
@@ -108,4 +111,4 @@ function Checkout() {
     );
 }
 
-export default Checkout;
+export default memo(Checkout);

@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './ShopItems.module.scss';
-import { useState } from 'react';
-import { useContext } from 'react';
+import { useCallback, useState } from 'react';
+import { useContext, memo } from 'react';
 import { context } from '../Context';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ function ProductCart(props) {
     const { setTotal, setNumberItems, setAddToCart, addToCart } = useContext(context);
     const [isAdded, setIsAdded] = useState(false);
 
-    const handleAddItem = () => {
+    const handleAddItem = useCallback(() => {
         setIsAdded(true);
         const newItems = {
             id: id,
@@ -23,10 +23,9 @@ function ProductCart(props) {
         setAddToCart((item) => [...item, newItems]);
         setTotal((total) => (total += Number(price)));
         setNumberItems(addToCart);
-        setTimeout(() => {
-            setIsAdded(false);
-        }, 10000);
-    };
+    }, [id, name, price, imageUrl, setAddToCart, setTotal, setNumberItems, addToCart]);
+
+    console.log('re render ProductCart');
 
     return (
         <div className={cx('wrapper-dog')}>
@@ -52,4 +51,4 @@ function ProductCart(props) {
     );
 }
 
-export default ProductCart;
+export default memo(ProductCart);

@@ -2,7 +2,7 @@ import { Col, Row, Input, Button, Select, Tag } from 'antd';
 import Todo from '../Todo';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { todosRemainingSelector } from '~/store/selector';
 import todosSlice from './todosSlice';
 
@@ -22,7 +22,7 @@ export default function TodoList() {
         setPriority(value);
     };
 
-    const handleSubmitTodo = () => {
+    const handleSubmitTodo = useCallback(() => {
         dispatch(
             todosSlice.actions.addTodo({
                 id: uuidv4(),
@@ -33,7 +33,7 @@ export default function TodoList() {
         );
         setTodoName('');
         setPriority('Medium');
-    };
+    }, [dispatch, priority, todoName]);
 
     return (
         <Row style={{ height: 'calc(100% - 40px)' }}>

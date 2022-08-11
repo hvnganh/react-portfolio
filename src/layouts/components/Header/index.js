@@ -18,21 +18,23 @@ function Header() {
     const handleHome = () => {
         navigate('/');
         setIsActive(false);
+        console.log('re render handleHome');
     };
 
     const handleProjects = () => {
         navigate('/projects');
         setIsActive(false);
+        console.log('re render handleProjects');
     };
 
     const handleEShop = () => {
         navigate('/eshop');
         setIsActive(false);
+        console.log('re render handleEShop');
     };
 
     const handleActiveMenu = () => {
         setIsActive(isActive === false ? true : false);
-        console.log(isActive);
     };
 
     return (

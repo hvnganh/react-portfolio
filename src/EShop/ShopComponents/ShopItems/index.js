@@ -3,6 +3,7 @@ import styles from './ShopItems.module.scss';
 import ProductCart from './ProductCart';
 import { useSelector } from 'react-redux';
 import { productListSelector } from '~/store/selector';
+import { memo } from 'react';
 
 const cx = classNames.bind(styles);
 
@@ -22,4 +23,4 @@ function ShopItems() {
     );
 }
 
-export default ShopItems;
+export default memo(ShopItems);

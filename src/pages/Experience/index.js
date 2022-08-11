@@ -11,8 +11,6 @@ const cx = classNames.bind(styles);
 function Experience() {
     const value = useContext(ThemeContext);
 
-    console.log(window.scrollY);
-
     return (
         <div>
             <div className={cx('wrapper')}>

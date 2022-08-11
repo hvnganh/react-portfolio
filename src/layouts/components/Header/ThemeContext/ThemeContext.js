@@ -6,6 +6,7 @@ function ThemProvider({ children }) {
     const [theme, setTheme] = useState('dark');
     const toggleTheme = () => {
         setTheme(theme === 'dark' ? 'light' : 'dark');
+        console.log('re render toggleTheme');
     };
 
     const value = {

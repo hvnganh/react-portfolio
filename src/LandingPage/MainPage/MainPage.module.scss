@@ -20,3 +20,29 @@
 .footer-landing-page {
     width: 1000px;
 }
+
+.btn-wrapper {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    animation: show 1s linear inherit;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #36b37e;
+}
+
+.icon-up {
+    color: var(--white-color);
+}

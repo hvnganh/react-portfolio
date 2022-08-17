@@ -13,8 +13,6 @@ function EShop() {
     const [numberItems, setNumberItems] = useState([]);
     const [addToCart, setAddToCart] = useState([{}]);
 
-    console.log('re render ESHOP');
-
     return (
         <context.Provider value={{ total, setTotal, numberItems, setNumberItems, addToCart, setAddToCart }}>
             <div className={cx('wrapper')}>

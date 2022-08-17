@@ -25,8 +25,6 @@ function ProductCart(props) {
         setNumberItems(addToCart);
     }, [id, name, price, imageUrl, setAddToCart, setTotal, setNumberItems, addToCart]);
 
-    console.log('re render ProductCart');
-
     return (
         <div className={cx('wrapper-dog')}>
             <div className={cx('item')}>

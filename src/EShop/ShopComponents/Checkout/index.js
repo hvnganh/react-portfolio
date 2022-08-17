@@ -16,12 +16,11 @@ function Checkout() {
         setTotal(0);
         setNumberItems([]);
         setIsModalOpen(true);
-        setTimeout(() => {
-            setIsModalOpen(false);
-        }, 4000);
     }, [setAddToCart, setNumberItems, setTotal]);
 
-    console.log('re render Checkout');
+    const handleClose = () => {
+        setIsModalOpen(false);
+    };
 
     return (
         <div className={cx('wrapper')}>
@@ -103,6 +102,11 @@ function Checkout() {
                                 }
                                 alt="bought"
                             />
+                        </div>
+                        <div className={cx('btn-close-wrapper')}>
+                            <button onClick={handleClose} className={cx('close')}>
+                                CLOSE
+                            </button>
                         </div>
                     </div>
                 </div>

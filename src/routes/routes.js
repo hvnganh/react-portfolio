@@ -9,6 +9,7 @@ import Home from '~/pages/Home';
 import config from '~/config';
 import Work from '~/work';
 import EShop from '~/EShop';
+import LandingPage from '~/LandingPage';
 import CartDetail from '~/EShop/ShopComponents/CartDetail';
 
 const publicRoutes = [
@@ -16,6 +17,7 @@ const publicRoutes = [
     { path: config.routes.projects, component: Work },
     { path: config.routes.eshop, component: EShop },
     { path: config.routes.cart, component: CartDetail },
+    { path: config.routes.landingpage, component: LandingPage },
     // { path: config.routes.introduce, component: Introduce },
     // { path: config.routes.contact, component: Contact },
     // { path: config.routes.education, component: Education },

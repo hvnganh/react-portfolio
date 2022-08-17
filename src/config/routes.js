@@ -3,6 +3,7 @@ const routes = {
     projects: '/projects',
     eshop: '/eshop',
     cart: '/eshop/cart/:id',
+    landingpage: '/landingpage',
     // introduce: '/introduce',
     // education: '/education',
     // experience: '/experience',

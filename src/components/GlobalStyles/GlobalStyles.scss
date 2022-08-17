@@ -1,4 +1,6 @@
 @import 'normalize.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '~bootstrap/scss/bootstrap';
 
 * {
     padding: 0;
@@ -34,6 +36,10 @@ body {
 
 p {
     margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 html *::-webkit-scrollbar {

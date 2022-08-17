@@ -33,6 +33,12 @@ function Header() {
         console.log('re render handleEShop');
     };
 
+    const handleLandingpage = () => {
+        navigate('/landingpage');
+        setIsActive(false);
+        console.log('re render handleLandingpage');
+    };
+
     const handleActiveMenu = () => {
         setIsActive(isActive === false ? true : false);
     };
@@ -48,6 +54,9 @@ function Header() {
                 </button>
                 <button onClick={handleEShop} className={cx('link-btn', value.theme)}>
                     E-Shop
+                </button>
+                <button onClick={handleLandingpage} className={cx('link-btn', value.theme)}>
+                    LandingPage
                 </button>
                 <Tippy className={cx('tippy', value.theme)} placement="right-end" content="Change Color">
                     <FontAwesomeIcon onClick={value.toggleTheme} className={cx('icon', value.theme)} icon={faReact} />
@@ -75,6 +84,11 @@ function Header() {
                     <li className={cx('mobile-item')}>
                         <button onClick={handleEShop} className={cx('link-btn', 'mobile-btn', value.theme)}>
                             E-Shop
+                        </button>
+                    </li>
+                    <li className={cx('mobile-item')}>
+                        <button onClick={handleLandingpage} className={cx('link-btn', 'mobile-btn', value.theme)}>
+                            LandingPage
                         </button>
                     </li>
                     <li className={cx('mobile-item')}>
